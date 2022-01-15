@@ -4,7 +4,7 @@
 
 long long cache[1000];
 
-long long fib(int a)
+long long fib(int a) // Рекурсивная функция нахождение a члена Фибоначчи с динамической базой
 {
     if (a == 0 || a == 1)
     {

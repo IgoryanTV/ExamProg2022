@@ -66,7 +66,7 @@ int main()
     {
         for (int j = 0; j < n; j++)
         {
-            if (del_sum(matrix[i][j]) == matrix[i][j] && matrix[i][j] != 1)
+            if (del_sum(matrix[i][j]) == matrix[i][j] && matrix[i][j] != 1) // Проверка числа на "совершенное" число
             {
                 result += matrix[i][j];
             }

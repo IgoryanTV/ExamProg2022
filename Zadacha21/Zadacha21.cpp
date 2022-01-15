@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int kvadr(int n, int m)
+int kvadr(int n, int m) // Рекурсивная функция поиска квадратов максимального размера
 {
     if (n == m)
     {

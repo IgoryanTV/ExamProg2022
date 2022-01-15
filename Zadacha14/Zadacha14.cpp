@@ -2,13 +2,13 @@
 #include <Windows.h>
 #include <cmath>
 
-long long plus_p(int a, int b)
+long long plus_p(int a, int b) // Рекурсивая функция для сложения
 {
     if (b == 0) return a;
     else return plus_p(a + 1, b - 1);
 }
 
-long long increase_m(int a, int b)
+long long increase_m(int a, int b)  // Рекурсивая функция для умножения
 {
     if (b == 0) return 0;
     else return plus_p(a, increase_m(a, b - 1));

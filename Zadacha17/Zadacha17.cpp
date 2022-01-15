@@ -3,7 +3,7 @@
 #include <cmath>
 #include <time.h>
 
-int del_sum(int a)
+int del_sum(int a) // Сумма делителей
 {
     int sum = 1;
     for (int i = 2; i <= a / i; i++)
@@ -79,7 +79,7 @@ int main()
 
     for (int iterator = 0; iterator < n; iterator++)
     {
-        if (isPrime(del_sum(abs(arr[iterator]))))
+        if (isPrime(del_sum(abs(arr[iterator])))) // Проверка модуля суммы делителей числа на простоту
         {
             count++;
         }

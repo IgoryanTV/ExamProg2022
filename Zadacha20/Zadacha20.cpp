@@ -3,7 +3,7 @@
 #include <cmath>
 #include <time.h>
 
-bool isPrime(int n, int d) 
+bool isPrime(int n, int d) // Рекурсивная функция проверки числа на простоту
 {
     if (d == 1)
     {

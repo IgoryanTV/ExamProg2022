@@ -2,7 +2,7 @@
 #include <Windows.h>
 #include <cmath>
 
-bool isPrime(int n, int i = 2)
+bool isPrime(int n, int i = 2) // Рекурсивная функция проверки числа на простоту
 {
     if (n <= 2)
     {
@@ -32,9 +32,9 @@ int main()
 
     std::cin >> n >> m;
 
-    if (isPrime(n) && isPrime(m))
+    if (isPrime(n) && isPrime(m)) // Проверка введеных чисел на простоту
     {
-        if (abs(n - m) == 2)
+        if (abs(n - m) == 2) // Проверка модуля разности чисел
         {
             std::cout << "Числа " << n << " и " << m << " близнецы." << std::endl;
         }

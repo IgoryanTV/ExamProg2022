@@ -3,7 +3,7 @@
 #include <time.h>
 #include <cmath>
 
-void gen(int n, int m, int** M,int left, int right)
+void gen(int n, int m, int** M,int left, int right) // Функция для генерации массива
 {
     srand(time(NULL));
 
@@ -28,11 +28,11 @@ int main()
 
     std::cin >> n >> m;
 
-    int** matrix = new int*[n];
+    int** matrix = new int*[n]; // Создание двумерного массива
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // Создание двумерного массива
     {
-        matrix[i] = new int[m];
+        matrix[i] = new int[m]; // Создание двумерного массива
     }
 
     gen(n, m, matrix, 0, 100);
@@ -41,11 +41,11 @@ int main()
     {
         for (int j = 0; j < m; j++)
         {
-            temp = matrix[i][j];
+            temp += matrix[i][j];
         }
     }
 
-    temp /= n * m;
+    temp /= n * m; // Подсчет среднего арифметического двумерного массива
 
     for (int i = 0; i < n; i++)
     {
@@ -53,16 +53,16 @@ int main()
         {
             if (matrix[i][j] > temp)
             {
-                count++;
+                count++; // Подсчет количества элементов больших temp
             }
         }
     }
 
-    std::cout << count << std::endl;
+    std::cout << count << std::endl; // Удаление двумерного массива
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // Удаление двумерного массива
     {
-        delete[] matrix[i];
+        delete[] matrix[i]; // Удаление двумерного массива
     }
 
     system("pause");

@@ -62,11 +62,11 @@ int main()
     gen(n, n, matrix, -100, 100);
     viewMatrix(n, n, matrix);
 
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i < n; i++) // Над главной диагональю
     {
-        for (int j = i; j < n; j++)
+        for (int j = i; j < n; j++) // Над главной диагональю
         {
-            if (del_sum(matrix[i][j]) == matrix[i][j] && matrix[i][j] != 1)
+            if (del_sum(matrix[i][j]) == matrix[i][j] && matrix[i][j] != 1) // Проверка числа на совершенство
             {
                 result += matrix[i][j];
             }

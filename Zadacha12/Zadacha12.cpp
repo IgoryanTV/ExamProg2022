@@ -4,7 +4,7 @@
 
 long long cache[1000] = { 1 };
 
-void divs(int n, int i = 1)
+void divs(int n, int i = 1) // Рекурсивная функция нахождение и вывода делителей числа
 {
     if (n % i == 0)
     {

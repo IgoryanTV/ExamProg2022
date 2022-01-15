@@ -16,7 +16,7 @@ int main()
     
     for (int i = 0; i < strlen(string1); i++)
     {
-        if (isdigit(string1[i]))
+        if (isdigit(string1[i])) // Нуууу... Проверка символа на то, что он цифра
         {
             count++;
             result += string1[i] - 48;

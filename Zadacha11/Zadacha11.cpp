@@ -12,8 +12,8 @@ int main()
     std::string buf;
     std::string long_word;
     std::string short_word;
-    size_t max_len = 0;
-    size_t min_len = 10000;
+    size_t max_len = 0; // Можно unsigned int
+    size_t min_len = 10000; // Можно unsigned int
 
     in.open("in.txt");
 
@@ -32,6 +32,7 @@ int main()
             short_word = buf;
             min_len = short_word.size();
         }
+
         if (buf.size() > max_len)
         {
             long_word = buf;

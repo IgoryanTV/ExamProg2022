@@ -47,7 +47,7 @@ void showArray(int n, int *m)
     std::cout << std::endl;
 }
 
-int sum_cif(int digit)
+int sum_cif(int digit) // Сумма цифр числа
 {
     int sum = 0;
 
@@ -66,7 +66,7 @@ int main()
     SetConsoleOutputCP(1251);
 
     int n;
-    int count = 0;
+    int j = 0;
 
     std::cin >> n;
 
@@ -78,14 +78,14 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        if (isPrime(sum_cif(i)))
+        if (isPrime(sum_cif(arr[i])))
         {
-            res[i] = i;
-            count++;
+            res[j] = arr[i];
+            j++;
         }
     }
 
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i < j; i++)
     {
         std::cout << res[i] << std::endl;
     }

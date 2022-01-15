@@ -23,17 +23,17 @@ int main()
         return 1;
     }
 
-    while (std::getline(in, buf))
+    while (std::getline(in, buf)) // Запись строки в буфер
     {
-        out << buf;
+        out << buf; // Запись строки в файл
 
-        if (i > buf.size())
+        if (i > buf.size()) // Номер строки больше самой строки
         {
             out << buf;
         }
         else
         {
-            for (int j = buf.size() - i; j < buf.size(); j++)
+            for (int j = buf.size() - i; j < buf.size(); j++) // Дополнение записаной строки j символами с i символа
             {
                 out << buf[j];
             }

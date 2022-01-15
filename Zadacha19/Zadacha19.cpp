@@ -19,7 +19,7 @@ int main()
     std::cout << "Введите строку (в конце должна быть точка): ";
     getline(std::cin, stroka);
 
-    if (stroka[0] != ' ')
+    if (stroka[0] != ' ') // Подсчёт первого слова
     {
         if (stroka[0] == simv)
         {
@@ -30,11 +30,11 @@ int main()
 
     do
     {
-        if (stroka[i] == ' ' && stroka[i + 1] != ' ' && stroka[i + 1] != '.')
+        if (stroka[i] == ' ' && stroka[i + 1] != ' ' && stroka[i + 1] != '.') // Подсчёт общего количества
         {
             a++;
         }
-        if (stroka[i] == ' ' && stroka[i + 1] == simv)
+        if (stroka[i] == ' ' && stroka[i + 1] == simv) // Подсчёт количества слов на b
         {
             count++;
         }

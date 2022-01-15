@@ -2,13 +2,13 @@
 #include <Windows.h>
 #include <cmath>
 
-struct test
+struct test // Структура для сохранения числа и его количества делителей
 {
     int digit;
     int countDel;
 };
 
-int del_count(int chislo)
+int del_count(int chislo) // Функция для нахождения количества делителей у числа
 {
     int count = 2;
 
@@ -37,7 +37,7 @@ int main()
     int a;
     int b;
     int temp;
-    int j = 0;
+    int j = 0; // Для массива
 
     std::cin >> a >> b;
 

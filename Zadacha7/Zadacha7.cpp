@@ -24,7 +24,7 @@ int main()
 
     while (std::getline(in, buf))
     {
-        if (buf.size() > result.size())
+        if (buf.size() > result.size()) // Поиск самой длинной строки
         {
             result = buf;
         }

@@ -28,12 +28,12 @@ int main()
     {
         temp = buf;
 
-        for (int i = 0; i < buf.size() - 1; i++)
+        for (int i = 0; i < buf.size() - 1; i++) 
         {
-            temp[i] = buf[buf.size() - 1 - i];
+            temp[i] = buf[buf.size() - 1 - i]; 
         }
 
-        out << temp << std::endl;
+        out << temp << std::endl; // Запись перевернутой строки
     }
 
     in.close();

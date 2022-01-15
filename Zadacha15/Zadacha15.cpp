@@ -30,11 +30,10 @@ int main()
     int a;
     int b;
     int n;
-    int countA = 0;
-    int countB = 0;
+    int count = 0;
 
     std::cin >> n;
-    std::cout << "Введите а и б: ";
+    std::cout << "Введите a и b: ";
     std::cin >> a >> b;
 
     int* arr = new int[n];
@@ -44,18 +43,13 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > a)
+        if (arr[i] > a && arr[i] < b)
         {
-            countA++;
-        }
-        else if (arr[i] < b)
-        {
-            countB++;
+            count++;
         }
     }
 
-    std::cout << "Больше a: " << countA << std::endl;
-    std::cout << "Больше б: " << countB << std::endl;
+    std::cout << "Результат: " << count << std::endl;
 
     system("pause");
     return 0;

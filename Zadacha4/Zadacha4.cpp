@@ -2,10 +2,11 @@
 #include <Windows.h>
 #include <cmath>
 
-bool isPrime(unsigned int n)
+bool isPrime(unsigned int n) // Функция проверки числа на простоту
 {
     bool f = true;
     int d = 3;
+
     if ((n % 2 == 0 && n != 2) || (n == 1))
     {
         f = false;
@@ -35,7 +36,7 @@ int main()
     int a;
     int b;
     int temp;
-    int j = 0;
+    int j = 0; // Счетчик количества простых чисел
 
     std::cin >> a >> b;
 
@@ -46,7 +47,7 @@ int main()
         b = a;
     }
 
-    long *arr = new long[b / 2];
+    long *arr = new long[b / 2]; // Массив для сохранения простых чисел
 
     for (int i = a; i <= b; i++)
     {
